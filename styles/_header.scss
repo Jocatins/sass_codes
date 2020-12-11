@@ -1,0 +1,21 @@
+@mixin jocatins($background) {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background: $background;
+}
+
+header {
+  @include jocatins(purple);
+
+  height: 50vh;
+
+  color: $textColor;
+  button {
+    background: $primaryBtn;
+    &:hover {
+      background: rgb(76, 0, 255);
+    }
+  }
+}
